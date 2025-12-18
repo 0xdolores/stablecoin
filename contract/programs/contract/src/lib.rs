@@ -1,11 +1,11 @@
 use anchor_lang::prelude::*;
 
-use state::*;
 mod state;
-use constants::*;
+use state::*;
 mod constants;
-use instructions::*;
+use constants::*;
 mod instructions;
+use instructions::*;
 
 declare_id!("GSP7LL75gEw5EetxyAEjMiy4A9yij5oHEVjuGbjg18yu");
 
@@ -13,11 +13,7 @@ declare_id!("GSP7LL75gEw5EetxyAEjMiy4A9yij5oHEVjuGbjg18yu");
 pub mod contract {
     use super::*;
 
-    pub fn initialize(ctx: Context<Initialize>) -> Result<()> {
-        msg!("Greetings from: {:?}", ctx.program_id);
-        Ok(())
+    pub fn initialize_config(ctx: Context<InitializeConfig>) -> Result<()> {
+        process_initialize_config(ctx)
     }
 }
-
-#[derive(Accounts)]
-pub struct Initialize {}
