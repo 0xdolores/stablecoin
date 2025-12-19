@@ -10,7 +10,7 @@ pub struct Collateral {
     pub amout_minted: u64,
     pub bump: u8,
     pub bump_sol_account: u8,
-    pub is_initialize: bool,
+    pub is_initialized: bool,
 }
 
 #[account]
