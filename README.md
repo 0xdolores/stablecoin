@@ -23,13 +23,13 @@ Node.js & Yarn: Required for running tests.
 Clone the project
 
 ```bash
-  git clone https://github.com/0xdolores/BDTC
+  git clone https://github.com/0xdolores/stablecoin
 ```
 
 Go to the project directory
 
 ```bash
-  cd BDTC/contract
+  cd stablecoin/contract
 ```
 
 Build the program
